@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<title>Index</title>
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/popbox.css">
+
+
+
+
+	<style type="text/css">
+
+	body{
+		margin-left: 100px; 
+		margin-right: 100px; 
+		font-family: monospace; 
+		font-size: 10pt;
+	}
+
+	.show-mac, .show-ubuntu{
+		min-width: 100px;
+		min-height: 50px; 
+		font-family: monospace; 
+		font-weight: bolder; 
+		font-size: 12pt;
+	}
+
+	p{
+		text-align: justify;
+		font-style: italic;
+	}
+		
+	</style>
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+
+		$(document).ready(function(){
+
+			/*------------Macintosh---------------*/
+
+			$(".pop-mac").hide();
+			$(".show-mac").click(function(){
+				$(".pop-mac").fadeIn(100);
+			});
+
+		$(".ok-mac").click(function(){
+			$(".pop-mac").fadeOut(100);
+		});
+
+
+		/*------------Ubuntu---------------*/
+
+		$(".pop-ubuntu").hide();
+			$(".show-ubuntu").click(function(){
+				$(".pop-ubuntu").fadeIn(100);
+			});
+
+		$(".ok-ubuntu").click(function(){
+			$(".pop-ubuntu").fadeOut(100);
+		});
+
+
+			});
+
+
+
+	</script>
+</head>
+<body>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat purus ut pulvinar hendrerit. Vivamus quis quam sed dui suscipit maximus a nec arcu. Aenean pulvinar sed metus in eleifend. Fusce at feugiat diam. Donec sit amet arcu bibendum, mollis mauris ac, viverra quam. Donec ultricies eleifend orci at molestie. Phasellus vitae scelerisque sem. Donec quis orci feugiat, scelerisque felis eget, bibendum dolor. Mauris ullamcorper faucibus sem, sed imperdiet nulla luctus et. Ut maximus euismod diam, id pretium lorem. Phasellus iaculis elit lacus, sit amet tristique lectus bibendum ut. In vulputate sagittis laoreet. Nullam suscipit ullamcorper semper. Morbi semper tempor lectus condimentum fringilla. Sed vulputate placerat sodales. Duis sit amet mauris interdum purus vestibulum commodo.
+</p>
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat purus ut pulvinar hendrerit. Vivamus quis quam sed dui suscipit maximus a nec arcu. Aenean pulvinar sed metus in eleifend. Fusce at feugiat diam. Donec sit amet arcu bibendum, mollis mauris ac, viverra quam. Donec ultricies eleifend orci at molestie. Phasellus vitae scelerisque sem. Donec quis orci feugiat, scelerisque felis eget, bibendum dolor. Mauris ullamcorper faucibus sem, sed imperdiet nulla luctus et. Ut maximus euismod diam, id pretium lorem. Phasellus iaculis elit lacus, sit amet tristique lectus bibendum ut. In vulputate sagittis laoreet. Nullam suscipit ullamcorper semper. Morbi semper tempor lectus condimentum fringilla. Sed vulputate placerat sodales. Duis sit amet mauris interdum purus vestibulum commodo.
+</p>
+
+
+
+<!--Buttons to Trigger both the dialogue boxes.-->
+
+<center><button class="show-mac">Mac Style</button> <button class="show-ubuntu">Ubuntu Style</button></center>
+
+
+
+
+
+
+
+
+<!--Macintosh Popup Starts Here-->
+
+<div class="pop-mac">
+<div class="alert-mac">
+<div class="head-mac">Error </div>
+<div class="body-mac">
+	<span class="body-title-mac">To open "Adobe Illustrator 6" you need to install the legacy Java SE 6 runtime.</span>
+	<span class="body-disc-mac">Click "more info..." to visit the legacy Java SE 6 download website.</span>
+	<div class="buttons-mac" align="right">
+	<button class="info-mac">More Info...</button> <button class="ok-mac">OK</button>
+	</div>
+</div>
+</div>
+</div>
+
+<!--Macintosh Popup Ends Here-->
+
+
+
+
+
+
+
+<!--Ubuntu Popup Starts Here-->
+
+<div class="pop-ubuntu">
+<div class="alert-ubuntu">
+<div class="head-ubuntu">Error</div>
+<div class="body-ubuntu">
+	<span class="body-title-ubuntu">To open "Adobe Illustrator 6" you need to install the legacy Java SE 6 runtime.</span>
+	<span class="body-disc-ubuntu">Click "more info..." to visit the legacy Java SE 6 download website.</span>
+	<div class="buttons-ubuntu" align="right">
+	<button class="info-ubuntu">More Info...</button> <button class="ok-ubuntu">Ok</button>
+	</div>
+</div>
+</div>
+</div>
+<!--Ubuntu Popup Ends Here-->
+
+
+
+
+
+</body>
+
+</html>
